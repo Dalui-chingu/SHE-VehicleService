@@ -6,10 +6,11 @@ import Footer from './footer';
 import About from './About';
 import Services from './Services';
 import Gallery from './Gallery';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+
+
+
 const axios=require('axios');
-
-
-
 
 
 class Home extends Component{
@@ -52,7 +53,9 @@ class Home extends Component{
           <div className="tm-left-content">
             <h1>Amazing deals for doorstep car servicing now at your fingertips</h1>
             <h4 className='grey'>We get the garage right to your door.</h4>
-           <button className='btn-class'>Book a service</button>
+            <button className='btn-class white-text'>
+        <Link to="/bookservice">Book a service</Link>
+      </button>
             {/* Add more content for left side as needed */}
           </div>
 
@@ -139,7 +142,7 @@ class Home extends Component{
         <div class="row12">
         <div class="column11">
             <div class="card12">
-            <img src="/images/profile.jpg" alt="Dhivagar" width="200px" height="200px" />
+            <img src="/images/profile.jpg" alt="KGS" width="100%" height="100%" />
             <div class="container12">
                 <h6 ><strong >Gowrisubha K</strong></h6>
                 <p class="title12">Developer</p>
@@ -150,26 +153,26 @@ class Home extends Component{
             </div>
         </div>
         <center><div class="column12">
-            <div class="card12">
-            <img src="/images/profile.jpg" alt="Piyush" width="200px" height="200px"/>
+            <div class="">
+            <img src="/images/profile.jpg" alt="DHANU" width="100%" height="100%"/>
             <div class="container12">
                 <h6><strong>Dhanusri T K</strong></h6>
                 <p class="title12">Developer</p>
-                <p>ph : 2345753421</p>
+                <p>Ph : 2345753421</p>
                 <p>dhanu@example.com</p>
-                <p><button class="button12">Contact</button></p>
+                <p><button class="button12">Contcard12act</button></p>
             </div>
             </div>
         </div>
         </center>
         <div class="column12">
             <div class="card12">
-            <img src="/images/profile.jpg" alt="Saisyama" width="200px" height="200px"/>
+            <img src="/images/profile.jpg" alt="HARINI" width="100%" height="100%"/>
             <div class="container12">
                 <h6><strong>Harini</strong></h6>
                 
                 <p class="title12">Developer</p>
-                <p>ph : 1236895432</p>
+                <p>Ph : 1236895432</p>
                 <p>harini@example.com</p>
                 <p><button class="button12">Contact</button></p>
             </div>

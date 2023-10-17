@@ -8,7 +8,8 @@ import Navbar from './navbar'
 import profile from './profile'
 import Passchange from './passchange'
 import History from './History';
-
+import RegistrationForm from './RegistrationForm';
+import EditUser from './EditUser';
 
 //import './style2.css';
 
@@ -29,6 +30,8 @@ class App extends Component{
             <Route exact path="/profile" component={profile}/>
             <Route exact path="/history" component={History}/>
             <Route exact path="/passchange" component={Passchange}/>
+            <Route path="/edit/:mobileno" component={EditUser} />
+            <Route path="/bookservice" component={RegistrationForm} />
           </Switch>
         </Router>
       </div>

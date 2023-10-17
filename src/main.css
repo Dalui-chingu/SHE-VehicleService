@@ -518,7 +518,18 @@ footer{
 .btn-class:hover{
 	background-color: #00C1A3;
   color: white;
+  text-decoration: none;
+  
+  cursor: pointer;
+
 }
 .card{
 	background-color: #00C1A3;
 }
+.card12{
+	border: solid 2px #00C1A3;
+}
+.white-text{
+	color: white;
+}
+

@@ -1,0 +1,98 @@
+/* RegistrationForm.css */
+.reg-form-container {
+    background-color: white;
+    width: 70%;
+    border: solid 2px #00C1A3;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+.reg-form-form {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.reg-form h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #1c093c;
+}
+
+.reg-form form {
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+
+.reg-form-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.reg-form-label {
+    color: #1c093c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.reg-form-textarea,
+.reg-form-input {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    color: black;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.reg-form-textarea {
+    resize: none;
+}
+
+.reg-form-textarea:focus,
+.reg-form-input:focus {
+    outline: none;
+    border-color: #6f6df4;
+}
+
+.reg-form-button {
+    border: none;
+    padding: 10px 20px; /* Adjust the padding as needed for the desired button size */
+    background: #00C1A3;
+    color: #ffffff;
+    border-radius: 3px;
+    grid-column: span 2; /* This will make the button span 2 columns */
+    margin-top: 20px; /* Adds some spacing between the input fields and the button */
+    align-self: flex-end; /* Align the button to the top of its grid cell */
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .reg-form-container {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .reg-form-row {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Make the form fields stack on top of each other */
+        grid-gap: 10px; /* Adjust the gap between form fields for smaller screens */
+    }
+
+    .reg-form-button {
+        grid-column: span 1; /* Make the button span 1 column on smaller screens */
+    }
+}
+

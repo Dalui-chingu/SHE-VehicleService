@@ -1,37 +1,27 @@
-/*body
-{
-    font-family: sans-serif;
-    color: #3c3939;
-    background-color: #f1f1f1;
+.historytable{
+    background-color: white;
+    width: 90%;
+    border: solid 2px #00C1A3;
+    
+    padding: 35px 100px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
 }
-.profile-card
-{
-    width: 400px;
-    margin: auto;
-    background: #fff;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+.btn-class{
+	border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: black; 
+  color: white; 
+  
 }
-.image-container
-{
-    position: relative;
-}
-.info
-{
-    color: #4b4fe2;
-    margin-right: 16px;
-}
-.main-container
-{
-    padding: 20px;
-}
-.profile-card a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-}
-
-.profile-card a:hover
-{
-    color: #ffc107;
-}*/
